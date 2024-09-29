@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Sweet Delights Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Events</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Menu</h1>
+
+        <section class="menu-section">
+            <h2>Breads</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Baguette</td>
+                    <td>A classic French bread with a crispy crust and soft, chewy interior. Perfect for sandwiches or as a side to your favorite meal.</td>
+                    <td>$3.99</td>
+                </tr>
+                <tr>
+                    <td>Sourdough</td>
+                    <td>Our signature artisanal sourdough bread, made with a wild yeast starter for a complex, tangy flavor and chewy texture.</td>
+                    <td>$5.99</td>
+                </tr>
+                <tr>
+                    <td>Whole Wheat</td>
+                    <td>Nutritious whole wheat bread, packed with fiber and flavor. A healthy choice for your daily sandwiches.</td>
+                    <td>$4.99</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="menu-section">
+            <h2>Pastries</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Croissant</td>
+                    <td>A buttery, flaky French pastry with a golden-brown exterior. Layers of delicate, airy dough create a melt-in-your-mouth experience.</td>
+                    <td>$2.99</td>
+                </tr>
+                <tr>
+                    <td>Cake (Slice)</td>
+                    <td>Indulge in our moist, flavorful cake. Available in various flavors like chocolate, vanilla, and red velvet. Each slice is generously sized and perfect for a sweet treat.</td>
+                    <td>$3.99</td>
+                </tr>
+                <tr>
+                    <td>Danish</td>
+                    <td>Sweet pastry with a flaky crust and fruit filling. Choose from apple, cherry, or cheese fillings.</td>
+                    <td>$3.49</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="custom-order">
+            <h2>Custom Order</h2>
+            <form id="custom-order-form">
+                <label for="item">Item:</label>
+                <input type="text" id="item" name="item" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sweet Delights Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
